@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://bit.ly/3mgIS94" type="image/x-icon">
+    <title>App with sockets</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <h1>MumeMume Chat - Admin</h1>
+    <div id="messages"></div>
+    <br>
+    <form onsubmit="return addMessage(this)">
+        <input type="text" id="username" placeholder="Username">
+        <input type="text" id="text" placeholder="Message">
+        <input type="submit" value="Send">
+    </form>
+    <button disabled onclick='return removeAllMessages()'>Clear All Messages</button>
+</body>
+
+</html>
