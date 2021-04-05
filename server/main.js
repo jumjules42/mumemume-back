@@ -60,6 +60,4 @@ io.on('connection', function (socket) {
     });
 });
 
-server.listen(9000, () =>
-    console.log('Servidor corriendo http://localhost:9000')
-);
+server.listen(0, () => console.log('Servidor corriendo'));
